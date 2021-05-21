@@ -88,6 +88,8 @@ plt.plot(x,regeressor.predict(ploy_x),color='blue')
 plt.xlabel('level')
 plt.ylabel('Salary')
 plt.title('Salary vs level')
+plt.savefig('myfig.png')
+
 
 #you can aplly degree as per your need
 

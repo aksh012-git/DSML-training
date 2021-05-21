@@ -23,11 +23,19 @@ dataset.head()
 #----------------------------------------------------------------------------------------------------------
 #split data set into input and output 
 #as of now i put column n. 2 and 3 as input and column no. 4 as output
-x = dataset.iloc[:,[2,3]].values
+x = dataset.iloc[:,[1,2,3]].values
 y = dataset.iloc[:,4].values
 x
 y
 
+#----------------------------------------------------------------------------------------------------------
+#use label encoder for encode your categorical data to numerical data
+from sklearn.preprocessing import LabelEncoder
+lebelEncoder_of_x = LabelEncoder()
+x[:,0] = lebelEncoder_of_x.fit_transform(x[:,0])
+x
+#see your male and female data replace with 1 and 0
+#because female F is first in A to Z so put 0 and male M after f so put 1
 
 #----------------------------------------------------------------------------------------------------------
 #split my dataset into traing and tasting
@@ -86,6 +94,4 @@ cm=   0  63  5
 print(((cm[0][0]+cm[1][1])/(cm[0][0]+cm[1][1]+cm[1][0]+cm[0][1]))*100)
 
 #----------------------------------------------------------------------------------------------------------
-
-
 

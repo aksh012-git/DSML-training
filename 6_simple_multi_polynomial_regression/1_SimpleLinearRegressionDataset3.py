@@ -151,6 +151,7 @@ plt.plot(x_test,regeressor.predict(x_test),color='blue')
 plt.xlabel('Year of experience')
 plt.ylabel('Salary')
 plt.title('Salary vs Experience(Testing set)')
+plt.savefig('myplot.png')
 
 #how to save or dump your accuracy model 
 #use library

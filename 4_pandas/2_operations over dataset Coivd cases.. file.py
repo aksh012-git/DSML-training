@@ -167,7 +167,6 @@ plt.figure(figsize=(16,8))
 sns.barplot(x='Name of State / UT',y='Active',data=df1[:-1])
 #add xticks for some changes in x-axis and add rotation for rotat your value and you use "" horizontalalignment='right' "" for see well formate
 plt.xticks(rotation=80,horizontalalignment='right',fontweight='light',fontsize='x-large')
-plt.show()
 #you can use "plt.savefig('myplot.png')"
 
 #you can increase you figure size
@@ -185,7 +184,7 @@ plt.figure(figsize=(16,8))
 sns.stripplot(x='Name of State / UT',y='Active',data=df1[:-1])
 #add xticks for some changes in x-axis and add rotation for rotat your value and you use "" horizontalalignment='right' "" for see well formate
 plt.xticks(rotation=80,horizontalalignment='right',fontweight='light',fontsize='x-large')
-plt.show()
+
 
 #overlab some values
 plt.figure(figsize=(16,8))
