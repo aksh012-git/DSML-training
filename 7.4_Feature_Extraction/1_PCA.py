@@ -32,9 +32,9 @@ import matplotlib.pyplot as plt
 
 dataset = pd.read_csv("wine.csv")
 
+#our data is classification variant 
 
 #--------------------------------------------------------------------------------------------------------------------
-#our data is classification variant 
 x = dataset.iloc[:,:-1].values
 y = dataset.iloc[:,-1].values
 
@@ -64,6 +64,10 @@ whya use feature extraction-->>
 Feature extraction helps to reduce the amount of redundant data from the data set. 
 In the end, the reduction of the data helps to build the model with less machine's efforts 
 and also increase the speed of learning and generalization steps in the machine learning process.
+
+you can change n column to 2 then you can easily do plot your data
+
+solve overfitting problem.
 """
 
 
