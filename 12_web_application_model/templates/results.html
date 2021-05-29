@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title>result page</title>
+    </head>
+    <body>
+    
+    {{name}} {{prediction}}    
+        {% if prediction == 1 %}
+        <p>Male</p>
+        {% endif %}
+        
+        {% if prediction == 0 %}
+        <p>Female</p>
+        {% endif %}
+               
+    </body>
+</html>

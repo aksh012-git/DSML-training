@@ -1,0 +1,13 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <body>
+        First App... checking...
+        <!-- you use action="{{url_for('predict')}}" direct jump a predict section -->
+        <form method="POST" action="{{url_for('predict')}}">
+            <input type="text" name="pname">
+            <button type="submit">PREDICT</button>
+        </form>
+    </body>
+</html>
